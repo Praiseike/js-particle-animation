@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .canvas-controls{
+        /* position:relative;
+        left:300px;*/
+        float:right;
+        height:700px;
+        width:350px; 
+        box-shadow: 0px 0px 2px grey;
+        margin-right:20px;
+        text-align:center;
+        justify-content:center;
+    }
+    .control{
+        margin-top:70px;
+    }
+</style>
+<body>
+
+    <canvas width="1100px" height="700px " class="canvas">
+    </canvas>
+    <div class="canvas-controls">
+        <div class="control">
+            <h3>Background Color</h3>
+            <input type ="color" class="bg-color" onchange="changeBackground()" value = "#21214e" >
+        
+        </div>
+        <div class="control">
+            <h3>Particle Color</h3>
+            <input type ="color" class = 'pt-color' value="#f1f1f1" onchange="changeParticleColor()">
+        </div>
+        <div class="control">
+            <h3>Line Color</h3>
+            <input type ="color" class='ln-color' value = "#e1e1e1" onchange="changeLineColor()">
+        </div>
+        <div class="control">
+            <h3>Add 5 particles</h3>
+            <button onclick='addParticles()'>add</button>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
